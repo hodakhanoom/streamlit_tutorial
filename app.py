@@ -28,7 +28,7 @@ if __name__ == "__main__":
         # try getting the tweets; if the username is incorrect, display the except message     
         try:
             outtweets = get_user_tweeets(st.session_state.name,st.session_state.api)
-        
+            st.markdown("heloo") 
             st.markdown(outtweets)
             # check that the user has tweeted at least ten times, 
             # if not display the except message 
