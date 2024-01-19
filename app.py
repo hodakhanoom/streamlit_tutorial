@@ -29,6 +29,7 @@ if __name__ == "__main__":
         try:
             outtweets = get_user_tweeets(st.session_state.name,st.session_state.api)
         
+            st.markdown(outtweets)
             # check that the user has tweeted at least ten times, 
             # if not display the except message 
             try:
@@ -45,5 +46,4 @@ if __name__ == "__main__":
                 st.markdown("This account has fewer than 10 tweets. Tweet more and come back later or try again.")  
             
         except:
-            st.markdown(outtweets)
             st.markdown("This account doesn't exist. Please try again.")        
